@@ -1,0 +1,126 @@
+/* TRT Yarışma Başvuru Formu - Admin Panel Stilleri */
+
+.trt-admin-header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.trt-admin-header h1 {
+    color: #ff6b35;
+    margin: 0;
+}
+
+.trt-admin-stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.trt-stat-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.trt-stat-box h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 24px;
+}
+
+.trt-stat-box p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.trt-stat-box.pending {
+    border-left: 4px solid #ffc107;
+}
+
+.trt-stat-box.approved {
+    border-left: 4px solid #28a745;
+}
+
+.trt-stat-box.rejected {
+    border-left: 4px solid #dc3545;
+}
+
+.trt-stat-box.total {
+    border-left: 4px solid #007cba;
+}
+
+/* Tablo stilleri */
+.wp-list-table .column-status select {
+    width: 100%;
+}
+
+.wp-list-table .column-actions {
+    white-space: nowrap;
+}
+
+.wp-list-table .column-actions .button {
+    margin-right: 5px;
+}
+
+/* Detay sayfası stilleri */
+.trt-application-detail {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.trt-application-detail h2 {
+    background: #f8f9fa;
+    margin: 0;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    color: #ff6b35;
+}
+
+.trt-application-detail .form-table {
+    margin: 0;
+}
+
+.trt-application-detail .form-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    width: 200px;
+}
+
+.trt-application-detail .form-table td {
+    padding: 15px 20px;
+}
+
+/* Filtre stilleri */
+.tablenav .actions select {
+    margin-right: 10px;
+}
+
+.tablenav .actions .button {
+    margin-left: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .trt-admin-stats {
+        flex-direction: column;
+    }
+    
+    .wp-list-table .column-actions {
+        white-space: normal;
+    }
+    
+    .wp-list-table .column-actions .button {
+        display: block;
+        margin: 2px 0;
+        width: 100%;
+    }
+}
+
