@@ -1,0 +1,126 @@
+@@ .. @@
+ .trt-category-option {
+   display: flex;
+   align-items: center;
+   padding: 12px 15px;
+   border: 2px solid #e0e0e0;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: white;
+   position: relative;
++  margin-bottom: 10px;
+ }
+ 
+ .trt-category-option:hover {
+@@ .. @@
+ .trt-category-option.selected {
+   border-color: #ff6b35;
+   background: #fff5f2;
++  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.2);
+ }
+ 
+ .trt-category-option input[type="radio"] {
+@@ .. @@
+ .trt-start-application-btn:disabled {
+   background: #ccc;
+   cursor: not-allowed;
+   transform: none;
+   box-shadow: none;
++  opacity: 0.6;
+ }
+ 
++/* Error states */
++.trt-form-group input.error,
++.trt-form-group select.error,
++.trt-form-group textarea.error {
++  border-color: #dc3545;
++  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.1);
++}
++
++.trt-error-text {
++  color: #dc3545;
++  font-size: 11px;
++  margin-top: 3px;
++  display: block;
++  font-weight: 500;
++}
++
++/* Summary styles */
++.trt-summary-section {
++  margin-bottom: 25px;
++  padding: 20px;
++  background: #f8f9fa;
++  border-radius: 8px;
++  border: 1px solid #e0e0e0;
++}
++
++.trt-summary-section h3 {
++  margin-top: 0;
++  color: #333;
++  font-size: 16px;
++  font-weight: 600;
++  border-bottom: 2px solid #ff6b35;
++  padding-bottom: 8px;
++  margin-bottom: 15px;
++}
++
++.trt-summary-item {
++  margin-bottom: 15px;
++}
++
++.trt-summary-item strong {
++  display: block;
++  margin-bottom: 8px;
++  color: #333;
++  font-weight: 600;
++}
++
++.trt-summary-item p {
++  margin: 5px 0;
++  font-size: 14px;
++  color: #555;
++}
++
++/* Agreement styles */
++.trt-agreement-content {
++  background: #f8f9fa;
++  padding: 20px;
++  border-radius: 8px;
++  margin-bottom: 20px;
++  border: 1px solid #e0e0e0;
++}
++
++.trt-agreement-content h3 {
++  color: #333;
++  font-size: 16px;
++  font-weight: 600;
++  margin-bottom: 15px;
++}
++
++.trt-agreement-content p {
++  margin-bottom: 10px;
++  font-size: 14px;
++  line-height: 1.5;
++  color: #555;
++}
++
++.trt-checkbox-label {
++  display: flex;
++  align-items: flex-start;
++  cursor: pointer;
++  font-size: 14px;
++  color: #333;
++  margin-bottom: 15px;
++  line-height: 1.4;
++}
++
++.trt-checkbox-label input[type="checkbox"] {
++  margin-right: 10px;
++  margin-top: 2px;
++  width: 18px;
++  height: 18px;
++  flex-shrink: 0;
++}
++
+ /* Back Button */
